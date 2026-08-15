@@ -22,7 +22,7 @@ block).
 This plugin uses Mermaid.ink to generate the diagram
 images directly: the browser builds a URL-safe base64 of the mermaid source
 and requests `<mermaidInkUrl>/svg/<b64>[?theme=dark]`, which returns an SVG. 
-See <https://mermaid.ink> for the service details.
+See <https://github.com/jihchi/mermaid.ink> for the details.
 
 ## Installation
 
