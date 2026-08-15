@@ -1,12 +1,12 @@
-# dsh-mermaid-preview-plugin
+# dsh-mermaid-image-preview
 
-A DeepSeek Harness Plugin for Previewing Mermaid Diagrams
+A DeepSeek Harness Plugin for Previewing Mermaid Diagram Images
 
-Renders mermaid diagrams directly under the assistant message when the message
+Renders mermaid diagram images directly under the assistant message when the message
 content contains mermaid syntax (a ` ```mermaid ` or ` ```mmd ` fenced code
 block).
 
-![dsh-mermaid-preview-plugin](./docs/img/dsh-mermaid-preview-plugin.jpg)
+![dsh-mermaid-image-preview](./docs/img/dsh-mermaid-image-preview.jpg)
 
 ## How it works
 
@@ -30,23 +30,23 @@ See <https://mermaid.ink> for the service details.
 
 ```bash
 ### latest version
-$ npx @deepseek-ai/dsh plugin --profile web add github:baconbao/dsh-mermaid-preview-plugin#latest
+$ npx @deepseek-ai/dsh plugin --profile web add github:baconbao/dsh-mermaid-image-preview#latest
 
 ### specific version
-$ npx @deepseek-ai/dsh plugin --profile web add github:baconbao/dsh-mermaid-preview-plugin#<VERSION_TAG|GIT_TAG>
+$ npx @deepseek-ai/dsh plugin --profile web add github:baconbao/dsh-mermaid-image-preview#<VERSION_TAG|GIT_TAG>
 
 ### dev version
-$ npx @deepseek-ai/dsh plugin --profile web add github:baconbao/dsh-mermaid-preview-plugin#main
+$ npx @deepseek-ai/dsh plugin --profile web add github:baconbao/dsh-mermaid-image-preview#main
 ```
 
 ### Installation form source
 
 ```bash
-$ git clone https://github.com/baconbao/dsh-mermaid-preview-plugin
-$ cd dsh-mermaid-preview-plugin
+$ git clone https://github.com/baconbao/dsh-mermaid-image-preview
+$ cd dsh-mermaid-image-preview
 $ pnpm install
 $ cd ..
-$ dsh plugin --profile web add dsh-mermaid-preview-plugin
+$ dsh plugin --profile web add dsh-mermaid-image-preview
 ```
 
 ## Configuration
@@ -58,7 +58,7 @@ height, edit the profile's `cordis.patch.yml` (e.g.
 `~/.dsh/profiles/web/cordis.patch.yml`):
 
 ```yaml
-- id: ui-dsh-mermaid-preview-plugin
+- id: ui-dsh-mermaid-image-preview
   config:
     mermaidInkUrl: https://your-own-mermaid-ink-server.example.com
     thumbMaxHeight: 204
@@ -72,7 +72,7 @@ height, edit the profile's `cordis.patch.yml` (e.g.
 ## Removal
 
 ```bash
-$ dsh plugin --profile web remove dsh-mermaid-preview-plugin
+$ dsh plugin --profile web remove dsh-mermaid-image-preview
 ```
 
 ## Test

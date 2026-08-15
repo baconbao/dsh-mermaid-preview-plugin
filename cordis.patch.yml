@@ -1,4 +1,4 @@
-# dsh-mermaid-preview-plugin - mount layer (bundle patch)
+# dsh-mermaid-image-preview - mount layer (bundle patch)
 #
 # The cordis mount row for this plugin, in the same format as the
 # dsh-web-app / dsh-base bundle patches. Two ways to use it:
@@ -9,7 +9,7 @@
 #
 # 2) Manual merge: merge the insert block below into the profile's
 #    cordis.patch.yml (e.g. ~/.dsh/profiles/web/cordis.patch.yml) and make
-#    sure dsh-mermaid-preview-plugin is resolvable by the Loader (node_modules
+#    sure dsh-mermaid-image-preview is resolvable by the Loader (node_modules
 #    or a pnpm workspace link).
 #
 # The id is the host-side mount-row identity (the node half is a pure UI
@@ -18,5 +18,5 @@
 # dsh-client-modules and enters `window.__DSH_BOOT__` automatically - no
 # extra registration needed.
 - insert:
-    - id: ui-dsh-mermaid-preview-plugin
-      name: 'dsh-mermaid-preview-plugin'
+    - id: ui-dsh-mermaid-image-preview
+      name: 'dsh-mermaid-image-preview'

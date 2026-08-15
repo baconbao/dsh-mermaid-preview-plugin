@@ -1,5 +1,5 @@
 {
-  "name": "dsh-mermaid-preview-plugin",
+  "name": "dsh-mermaid-image-preview",
   "description": "Render mermaid fenced blocks inside assistant messages as diagrams directly in the chat.",
   "version": "0.1.0",
   "license": "MIT",
