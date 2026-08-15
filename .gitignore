@@ -1,0 +1,34 @@
+# - Dependencies ---------------------
+# pnpm-installed dependencies (e.g. schemastery), reproducible from
+# pnpm-lock.yaml; never committed.
+node_modules/
+.pnpm-store/
+
+# - Build output ---------------------
+# No build step today; uncomment if a tsdown/tsc build is added later:
+# dist/
+# lib/**/*.js.map
+
+# - Logs / temp ----------------------
+*.log
+npm-debug.log*
+pnpm-debug.log*
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+
+# - Env / local config ------------------
+# Personal environment variables (if dotenv is used later)
+.env
+.env.*
+!.env.example
+
+# - Editors ------------------------
+.idea/
+.vscode/
+*.code-workspace
+
+# - Local profile config (user-owned, not for the repo) --
+# If you copy ~/.dsh-related config into the repo, keep your own version.
+# .dsh/
