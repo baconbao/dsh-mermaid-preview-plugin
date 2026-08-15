@@ -66,8 +66,8 @@ height, edit the profile's `cordis.patch.yml` (e.g.
 
 - `mermaidInkUrl`: your local mermaid-ink server.
 - `thumbMaxHeight`: positive integer, max thumbnail height in px.
-- When unset, `mermaidInkUrl: https://mermaid.ink` / `thumbMaxHeight: 204px` are used (defaults)
-- Restart dsh web after changing the settings
+- When unset, `mermaidInkUrl: https://mermaid.ink` and `thumbMaxHeight: 204px` are used as defaults.
+- Restart dsh web after changing the settings.
 
 ## Removal
 
