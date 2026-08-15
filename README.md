@@ -96,4 +96,4 @@ baconbao, vibe coding with deepseek ai
 
 ## License
 
-MIT
+[MIT](./LICENSE)
