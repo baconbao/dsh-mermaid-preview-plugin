@@ -6,7 +6,7 @@ Renders mermaid diagram images directly under the assistant message when the mes
 content contains mermaid syntax (a ` ```mermaid ` or ` ```mmd ` fenced code
 block).
 
-![dsh-mermaid-image-preview](./docs/img/dsh-mermaid-image-preview.jpg)
+![dsh-mermaid-image-preview](https://raw.githubusercontent.com/baconbao/dsh-mermaid-image-preview/latest/docs/img/dsh-mermaid-image-preview.jpg)
 
 ## How it works
 
@@ -29,17 +29,17 @@ See <https://github.com/jihchi/mermaid.ink> for the details.
 ### Installation from `github`
 
 ```bash
-### latest version
+### latest release version
 $ npx @deepseek-ai/dsh plugin --profile web add github:baconbao/dsh-mermaid-image-preview#latest
 
 ### specific version
 $ npx @deepseek-ai/dsh plugin --profile web add github:baconbao/dsh-mermaid-image-preview#<VERSION_TAG|GIT_TAG>
 
 ### dev version
-$ npx @deepseek-ai/dsh plugin --profile web add github:baconbao/dsh-mermaid-image-preview#main
+$ npx @deepseek-ai/dsh plugin --profile web add github:baconbao/dsh-mermaid-image-preview#dev
 ```
 
-### Installation form source
+### Installation form source code
 
 ```bash
 $ git clone https://github.com/baconbao/dsh-mermaid-image-preview
