@@ -33,7 +33,7 @@ See <https://mermaid.ink> for the service details.
 $ npx @deepseek-ai/dsh plugin --profile web add github:baconbao/dsh-mermaid-preview-plugin#latest
 
 ### specific version
-$ npx @deepseek-ai/dsh plugin --profile web add github:baconbao/dsh-mermaid-preview-plugin#<VERSION_TAG>
+$ npx @deepseek-ai/dsh plugin --profile web add github:baconbao/dsh-mermaid-preview-plugin#<VERSION_TAG|GIT_TAG>
 
 ### dev version
 $ npx @deepseek-ai/dsh plugin --profile web add github:baconbao/dsh-mermaid-preview-plugin#main
@@ -51,7 +51,7 @@ $ dsh plugin --profile web add dsh-mermaid-preview-plugin
 
 ## Configuration
 
-### Replace the mermaid.ink render server and thumbnail size
+### Configurate the mermaid.ink render server and thumbnail size
 
 To use your own mermaid-compatible render server or adjust the thumbnail
 height, edit the profile's `cordis.patch.yml` (e.g.
