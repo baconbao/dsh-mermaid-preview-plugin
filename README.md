@@ -81,8 +81,8 @@ To use your own mermaid-compatible render server, edit the profile's
 $ dsh plugin --profile web remove @baconbao/dsh-mermaid-image-preview
 ```
 
-[!NOTE]
-Since **v0.2.0** the plugin/package id is changed from `dsh-mermaid-image-preview` to `@baconbao/dsh-mermaid-image-preview`.
+> [!NOTE]
+> Since **v0.2.0** the plugin/package id is changed from `dsh-mermaid-image-preview` to `@baconbao/dsh-mermaid-image-preview`.
 
 ## Test
 
