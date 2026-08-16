@@ -10,17 +10,24 @@ block).
 
 ## Features and how it works
 
+- **Local renderer first!**
 - Setting card: you can adjust runtime settings in the UI - no restart needed.
 - Mount point: `conversation.chat.turnTail` (chain slot, additive - never
   shadows shipped UI).
 - Thumbnail display: the diagram renders as a thumbnail; click to enlarge in place, click again to shrink back (same element toggles, no popup).
-- Rendering: the browser builds a URL-safe base64 from the diagram source
-  (UTF-8 safe via native `btoa` + `TextEncoder`) and loads
-  `<mermaidInkUrl>/svg/<b64>[?theme=dark]` directly; light/dark themes follow the UI.
+- Light/dark themes follow the UI automatically.
 
-By default, this plugin uses <https://mermaid.ink> to generate the diagram images. 
-**You can change the render host to your own server**, 
-see <https://github.com/jihchi/mermaid.ink> for the details.
+The plugin renders diagrams locally with a built-in renderer. It supports
+14 diagram types out of the box.
+
+## Support diagram types
+
+**Rendered locally:** flowchart, sequenceDiagram, classDiagram, stateDiagram, erDiagram, pie, journey, gitGraph, requirementDiagram, timeline, quadrantChart, packet-beta, xychart-beta
+
+**Fallback (optional):** gantt, mindmap, block-beta, sankey-beta, architecture-beta, zenuml, C4Context
+
+> [!NOTE]
+> You can enable the fallback — see **Configuration** below.
 
 ## Installation
 
@@ -58,21 +65,25 @@ Values are stored in localStorage and applied immediately across all sessions.
 
 ### Change render server by profile patch
 
-To use your own mermaid-compatible render server, edit the profile's
-`cordis.patch.yml` (e.g. `~/.dsh/profiles/web/cordis.patch.yml`):
+Diagrams are rendered locally by default. To use your own render server or
+enable the external fallback, edit the profile's `cordis.patch.yml` (e.g.
+`~/.dsh/profiles/web/cordis.patch.yml`):
 
 ```yaml
 - id: ui-dsh-mermaid-image-preview
   config:
-    mermaidInkUrl: https://your-own-mermaid-ink-server.example.com
+    enableLocalRender: true
+    fallbackRenderUrl: https://mermaid.ink
+    enableFallback: false
 ```
 
-- `mermaidInkUrl`: your local mermaid-ink server.
-- When unset, `https://mermaid.ink` is used (default).
-- Restart dsh web after changing this setting.
-- To host your own mermaid-compatible render server, see <https://github.com/jihchi/mermaid.ink> for the details.
+- `enableLocalRender`: render locally (default `true`). Set `false` to always use the fallback server (`enableFallback` is ignored).
+- `fallbackRenderUrl`: fallback render server (default `https://mermaid.ink`).
+- `enableFallback`: use the fallback server when local rendering fails (default `false`).
+- Restart dsh web after changing these settings.
+- To host your own fallback render server, we recommand to see <https://github.com/jihchi/mermaid.ink> for the details.
 
-## Removal
+## Uninstallation
 
 ```bash
 $ dsh plugin --profile web remove @baconbao/dsh-mermaid-image-preview
