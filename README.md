@@ -54,7 +54,9 @@ $ dsh plugin --profile web add @baconbao/dsh-mermaid-image-preview
 
 ### Settings card
 
-The **Plugins** settings page shows a `Mermaid image preview` card where
+![dsh-mermaid-image-preview_setting-card](https://raw.githubusercontent.com/baconbao/dsh-mermaid-image-preview/5ba9990b5b1689931a92a2be1abb5fad7c98adf9/docs/img/dsh-mermaid-image-preview_setting-card.jpg)
+
+The plugins settings page (**Settings > Plugins**) shows a `Mermaid image preview` card where
 you can adjust plugin's runtime settings directly - no restart needed.
 Values are stored in localStorage and applied immediately across all sessions.
 
@@ -79,6 +81,7 @@ To use your own mermaid-compatible render server, edit the profile's
 $ dsh plugin --profile web remove @baconbao/dsh-mermaid-image-preview
 ```
 
+[!NOTE]
 Since **v0.2.0** the plugin/package id is changed from `dsh-mermaid-image-preview` to `@baconbao/dsh-mermaid-image-preview`.
 
 ## Test
