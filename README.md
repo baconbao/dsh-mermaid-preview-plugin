@@ -18,6 +18,7 @@ block).
 - Rendering: the browser builds a URL-safe base64 from the diagram source
   (UTF-8 safe via native `btoa` + `TextEncoder`) and loads
   `<mermaidInkUrl>/svg/<b64>[?theme=dark]` directly; light/dark themes follow the UI
+- Enable/Disable switch: persisted in localStorage, survives restarts
 
 This plugin uses Mermaid.ink to generate the diagram
 images directly: the browser builds a URL-safe base64 of the mermaid source
@@ -66,7 +67,8 @@ height, edit the profile's `cordis.patch.yml` (e.g.
 
 - `mermaidInkUrl`: your local mermaid-ink server.
 - `thumbMaxHeight`: positive integer, max thumbnail height in px.
-- When unset, `mermaidInkUrl: https://mermaid.ink` and `thumbMaxHeight: 204px` are used as defaults.
+- When unset, `mermaidInkUrl: https://mermaid.ink` and `thumbMaxHeight: 204px`
+  are used as defaults.
 - Restart dsh web after changing the settings.
 
 ## Removal
