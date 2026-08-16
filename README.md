@@ -2,7 +2,7 @@
 
 A DeepSeek Harness Plugin for Previewing Mermaid Diagram Images
 
-Renders mermaid diagram images directly under the assistant message when the message
+Render mermaid diagram images directly in DSH Web chat when the message
 content contains mermaid syntax (a ` ```mermaid ` or ` ```mmd ` fenced code
 block).
 
