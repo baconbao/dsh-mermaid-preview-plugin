@@ -53,6 +53,9 @@ $ pnpm install
 $ dsh plugin --profile web add .
 ```
 
+> [!IMPORTANT]
+> Restart dsh web after installing.
+
 ## Configuration
 
 ### Change runtime settings on setting card
