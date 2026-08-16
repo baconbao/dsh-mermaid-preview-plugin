@@ -60,7 +60,7 @@ $ dsh plugin --profile web add .
 
 ### Change runtime settings on setting card
 
-![dsh-mermaid-image-preview_setting-card](https://raw.githubusercontent.com/baconbao/dsh-mermaid-image-preview/5d31dc5a929a670e99223a150c0361d97b6dc4f4/docs/img/dsh-mermaid-image-preview_setting-card.jpg)
+![dsh-mermaid-image-preview_setting-card](https://raw.githubusercontent.com/baconbao/dsh-mermaid-image-preview/36646470cbe40cfeed8fd4e4824ffcaef97124a7/docs/img/dsh-mermaid-image-preview_setting-card.jpg)
 
 The **Plugins** settings page (**Settings > Plugins**) shows a `Mermaid image preview` card where
 you can adjust plugin's runtime settings directly - no restart needed.
