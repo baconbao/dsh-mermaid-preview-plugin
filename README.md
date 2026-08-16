@@ -2,31 +2,25 @@
 
 A DeepSeek Harness Plugin for Previewing Mermaid Diagram Images
 
-![dsh-mermaid-image-preview](https://raw.githubusercontent.com/baconbao/dsh-mermaid-image-preview/20e750658ed3da61d892df30cc127aaef5bd88b3/docs/img/dsh-mermaid-image-preview.jpg)
-
 Renders mermaid diagram images directly under the assistant message when the message
 content contains mermaid syntax (a ` ```mermaid ` or ` ```mmd ` fenced code
 block).
 
-- You can adjust runtime settings (enable/disable, image size, etc.) in the UI - no restart needed.
-- You can change the render host to your own server.
+![dsh-mermaid-image-preview](https://raw.githubusercontent.com/baconbao/dsh-mermaid-image-preview/20e750658ed3da61d892df30cc127aaef5bd88b3/docs/img/dsh-mermaid-image-preview.jpg)
 
-## How it works
+## Features and how it works
 
+- Setting card: you can adjust runtime settings in the UI - no restart needed.
 - Mount point: `conversation.chat.turnTail` (chain slot, additive - never
   shadows shipped UI).
-- Thumbnail display: the diagram renders as a thumbnail (max height
-  configurable, default 204px); click to enlarge in place, click again to
-  shrink back (same element toggles, no popup).
+- Thumbnail display: the diagram renders as a thumbnail; click to enlarge in place, click again to shrink back (same element toggles, no popup).
 - Rendering: the browser builds a URL-safe base64 from the diagram source
   (UTF-8 safe via native `btoa` + `TextEncoder`) and loads
   `<mermaidInkUrl>/svg/<b64>[?theme=dark]` directly; light/dark themes follow the UI.
-- Setting card: you can adjust runtime settings in the UI - no restart needed.
 
-This plugin uses Mermaid.ink to generate the diagram
-images directly: the browser builds a URL-safe base64 of the mermaid source
-and requests `<mermaidInkUrl>/svg/<b64>[?theme=dark]`, which returns an SVG. 
-See <https://github.com/jihchi/mermaid.ink> for the details.
+By default, this plugin uses Mermaid.ink to generate the diagram images. 
+You can change the render host to your own server, 
+see <https://github.com/jihchi/mermaid.ink> for the details.
 
 ## Installation
 
