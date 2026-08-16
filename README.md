@@ -51,7 +51,7 @@ $ dsh plugin --profile web add .
 
 ## Configuration
 
-### Settings card
+### Change ruuntim settings on setting card
 
 ![dsh-mermaid-image-preview_setting-card](https://raw.githubusercontent.com/baconbao/dsh-mermaid-image-preview/5d31dc5a929a670e99223a150c0361d97b6dc4f4/docs/img/dsh-mermaid-image-preview_setting-card.jpg)
 
@@ -59,7 +59,7 @@ The plugins settings page (**Settings > Plugins**) shows a `Mermaid image previe
 you can adjust plugin's runtime settings directly - no restart needed.
 Values are stored in localStorage and applied immediately across all sessions.
 
-### Render server (profile patch)
+### Change render server by profile patch
 
 To use your own mermaid-compatible render server, edit the profile's
 `cordis.patch.yml` (e.g. `~/.dsh/profiles/web/cordis.patch.yml`):
@@ -73,6 +73,7 @@ To use your own mermaid-compatible render server, edit the profile's
 - `mermaidInkUrl`: your local mermaid-ink server.
 - When unset, `https://mermaid.ink` is used (default).
 - Restart dsh web after changing this setting.
+- To host your own mermaid-compatible render server, see <https://github.com/jihchi/mermaid.ink> for the details
 
 ## Removal
 
