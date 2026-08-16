@@ -18,8 +18,8 @@ block).
   (UTF-8 safe via native `btoa` + `TextEncoder`) and loads
   `<mermaidInkUrl>/svg/<b64>[?theme=dark]` directly; light/dark themes follow the UI.
 
-By default, this plugin uses Mermaid.ink to generate the diagram images. 
-You can change the render host to your own server, 
+By default, this plugin uses <https://mermaid.ink> to generate the diagram images. 
+**You can change the render host to your own server**, 
 see <https://github.com/jihchi/mermaid.ink> for the details.
 
 ## Installation
