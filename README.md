@@ -11,24 +11,24 @@ block).
 ## Features and how it works
 
 - **Preview mermaid diagram by rendering image directly!**
-- **Local renderer first!**
+- **Local renderer first!** If it fails, it can fall back to an external or self-hosted rendering engine by configuring a fallback server.
 - Setting card: you can adjust runtime settings in the UI - no restart needed.
 - Mount point: `conversation.chat.turnTail` (chain slot, additive - never
   shadows shipped UI).
 - Thumbnail display: the diagram renders as a thumbnail; click to enlarge in place, click again to shrink back (same element toggles, no popup).
 - Light/dark themes follow the UI automatically.
 
+## Support diagram types
+
 The plugin renders diagrams locally with a built-in renderer. It supports
 14 diagram types out of the box.
 
-## Support diagram types
-
 **Rendered locally:** flowchart, sequenceDiagram, classDiagram, stateDiagram, erDiagram, pie, journey, gitGraph, requirementDiagram, timeline, quadrantChart, packet-beta, xychart-beta
 
-**Fallback (optional):** gantt, mindmap, block-beta, sankey-beta, architecture-beta, zenuml, C4Context
+**Expand:** gantt, mindmap, block-beta, sankey-beta, architecture-beta, zenuml, C4Context
 
 > [!NOTE]
-> You can enable the fallback — see **Configuration** below.
+> You can enable the fallback to render expanded types — see **Configuration** below.
 
 ## Installation
 
