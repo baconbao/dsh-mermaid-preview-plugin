@@ -2,11 +2,14 @@
 
 A DeepSeek Harness Plugin for Previewing Mermaid Diagram Images
 
+![dsh-mermaid-image-preview](https://raw.githubusercontent.com/baconbao/dsh-mermaid-image-preview/20e750658ed3da61d892df30cc127aaef5bd88b3/docs/img/dsh-mermaid-image-preview.jpg)
+
 Renders mermaid diagram images directly under the assistant message when the message
 content contains mermaid syntax (a ` ```mermaid ` or ` ```mmd ` fenced code
 block).
 
-![dsh-mermaid-image-preview](https://raw.githubusercontent.com/baconbao/dsh-mermaid-image-preview/20e750658ed3da61d892df30cc127aaef5bd88b3/docs/img/dsh-mermaid-image-preview.jpg)
+- You can adjust runtime settings (enable/disable, image size, etc.) in the UI - no restart needed.
+- You can change the render host to your own server.
 
 ## How it works
 
