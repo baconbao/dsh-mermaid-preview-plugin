@@ -10,6 +10,7 @@ block).
 
 ## Features and how it works
 
+- **Preview mermaid diagram by image directly**
 - **Local renderer first!**
 - Setting card: you can adjust runtime settings in the UI - no restart needed.
 - Mount point: `conversation.chat.turnTail` (chain slot, additive - never
