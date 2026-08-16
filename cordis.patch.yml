@@ -1,4 +1,4 @@
-# dsh-mermaid-image-preview - mount layer (bundle patch)
+# @baconbao/dsh-mermaid-image-preview - mount layer (bundle patch)
 #
 # The cordis mount row for this plugin, in the same format as the
 # dsh-web-app / dsh-base bundle patches. Two ways to use it:
@@ -19,4 +19,4 @@
 # extra registration needed.
 - insert:
     - id: ui-dsh-mermaid-image-preview
-      name: 'dsh-mermaid-image-preview'
+      name: '@baconbao/dsh-mermaid-image-preview'

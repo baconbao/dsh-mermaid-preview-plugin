@@ -11,14 +11,14 @@ block).
 ## How it works
 
 - Mount point: `conversation.chat.turnTail` (chain slot, additive - never
-  shadows shipped UI)
+  shadows shipped UI).
 - Thumbnail display: the diagram renders as a thumbnail (max height
   configurable, default 204px); click to enlarge in place, click again to
-  shrink back (same element toggles, no popup)
+  shrink back (same element toggles, no popup).
 - Rendering: the browser builds a URL-safe base64 from the diagram source
   (UTF-8 safe via native `btoa` + `TextEncoder`) and loads
-  `<mermaidInkUrl>/svg/<b64>[?theme=dark]` directly; light/dark themes follow the UI
-- Enable/Disable switch: persisted in localStorage, survives restarts
+  `<mermaidInkUrl>/svg/<b64>[?theme=dark]` directly; light/dark themes follow the UI.
+- Setting card: you can adjust runtime settings in ui - no restart needed.
 
 This plugin uses Mermaid.ink to generate the diagram
 images directly: the browser builds a URL-safe base64 of the mermaid source
@@ -47,35 +47,39 @@ $ git clone https://github.com/baconbao/dsh-mermaid-image-preview
 $ cd dsh-mermaid-image-preview
 $ pnpm install
 $ cd ..
-$ dsh plugin --profile web add dsh-mermaid-image-preview
+$ dsh plugin --profile web add @baconbao/dsh-mermaid-image-preview
 ```
 
 ## Configuration
 
-### Configurate the mermaid.ink render server and thumbnail size
+### Settings card
 
-To use your own mermaid-compatible render server or adjust the thumbnail
-height, edit the profile's `cordis.patch.yml` (e.g.
-`~/.dsh/profiles/web/cordis.patch.yml`):
+The **Plugins** settings page shows a `Mermaid image preview` card where
+you can adjust plugin's runtime settings directly - no restart needed.
+Values are stored in localStorage and applied immediately across all sessions.
+
+### Render server (profile patch)
+
+To use your own mermaid-compatible render server, edit the profile's
+`cordis.patch.yml` (e.g. `~/.dsh/profiles/web/cordis.patch.yml`):
 
 ```yaml
 - id: ui-dsh-mermaid-image-preview
   config:
     mermaidInkUrl: https://your-own-mermaid-ink-server.example.com
-    thumbMaxHeight: 204
 ```
 
 - `mermaidInkUrl`: your local mermaid-ink server.
-- `thumbMaxHeight`: positive integer, max thumbnail height in px.
-- When unset, `mermaidInkUrl: https://mermaid.ink` and `thumbMaxHeight: 204px`
-  are used as defaults.
-- Restart dsh web after changing the settings.
+- When unset, `https://mermaid.ink` is used (default).
+- Restart dsh web after changing this setting.
 
 ## Removal
 
 ```bash
-$ dsh plugin --profile web remove dsh-mermaid-image-preview
+$ dsh plugin --profile web remove @baconbao/dsh-mermaid-image-preview
 ```
+
+Since **v0.2.0** the plugin/package id is changed from `dsh-mermaid-image-preview` to `@baconbao/dsh-mermaid-image-preview`.
 
 ## Test
 
