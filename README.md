@@ -18,7 +18,7 @@ block).
 - Rendering: the browser builds a URL-safe base64 from the diagram source
   (UTF-8 safe via native `btoa` + `TextEncoder`) and loads
   `<mermaidInkUrl>/svg/<b64>[?theme=dark]` directly; light/dark themes follow the UI.
-- Setting card: you can adjust runtime settings in ui - no restart needed.
+- Setting card: you can adjust runtime settings in the UI - no restart needed.
 
 This plugin uses Mermaid.ink to generate the diagram
 images directly: the browser builds a URL-safe base64 of the mermaid source
@@ -40,7 +40,7 @@ $ npx @deepseek-ai/dsh plugin --profile web add github:baconbao/dsh-mermaid-imag
 $ npx @deepseek-ai/dsh plugin --profile web add github:baconbao/dsh-mermaid-image-preview#dev
 ```
 
-### Installation form source code
+### Installation from source code
 
 ```bash
 $ git clone https://github.com/baconbao/dsh-mermaid-image-preview
@@ -51,11 +51,11 @@ $ dsh plugin --profile web add .
 
 ## Configuration
 
-### Change ruuntim settings on setting card
+### Change runtime settings on setting card
 
 ![dsh-mermaid-image-preview_setting-card](https://raw.githubusercontent.com/baconbao/dsh-mermaid-image-preview/5d31dc5a929a670e99223a150c0361d97b6dc4f4/docs/img/dsh-mermaid-image-preview_setting-card.jpg)
 
-The plugins settings page (**Settings > Plugins**) shows a `Mermaid image preview` card where
+The **Plugins** settings page (**Settings > Plugins**) shows a `Mermaid image preview` card where
 you can adjust plugin's runtime settings directly - no restart needed.
 Values are stored in localStorage and applied immediately across all sessions.
 
@@ -73,7 +73,7 @@ To use your own mermaid-compatible render server, edit the profile's
 - `mermaidInkUrl`: your local mermaid-ink server.
 - When unset, `https://mermaid.ink` is used (default).
 - Restart dsh web after changing this setting.
-- To host your own mermaid-compatible render server, see <https://github.com/jihchi/mermaid.ink> for the details
+- To host your own mermaid-compatible render server, see <https://github.com/jihchi/mermaid.ink> for the details.
 
 ## Removal
 
