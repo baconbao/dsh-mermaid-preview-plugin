@@ -1,5 +1,10 @@
 # dsh-mermaid-image-preview
 
+[![Awesome DSH Plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com)
+[![DSH Plugin Profile Badge](https://img.shields.io/badge/DSH-Web%20profile-5B4CF0?style=flat-square)](https://github.com/deepseek-ai/deepseek-harness)
+[![Release Badge](https://img.shields.io/github/v/release/baconbao/dsh-mermaid-image-preview)](https://github.com/baconbao/dsh-mermaid-image-preview/releases)
+[![License Badge](https://img.shields.io/github/license/baconbao/dsh-mermaid-image-preview)](./LICENSE)
+
 A DeepSeek Harness Plugin for Previewing Mermaid Diagram Images
 
 Preview mermaid syntax as images via local rendering in DSH Web when the chat message contains a mermaid fenced code block (` ```mermaid or ```mmd ` ).
