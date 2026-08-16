@@ -10,7 +10,7 @@ block).
 
 ## Features and how it works
 
-- **Preview mermaid diagram by rendering image directly!**
+- **Preview mermaid diagrams by rendering images directly!**
 - **Local renderer first!** If it fails, it can fall back to an external or self-hosted rendering engine by configuring a fallback server.
 - Setting card: you can adjust runtime settings in the UI - no restart needed.
 - Mount point: `conversation.chat.turnTail` (chain slot, additive - never
@@ -85,7 +85,7 @@ enable the external fallback, edit the profile's `cordis.patch.yml` (e.g.
 - `fallbackRenderUrl`: fallback render server (default `https://mermaid.ink`).
 - `enableFallback`: use the fallback server when local rendering fails (default `false`).
 - Restart dsh web after changing these settings.
-- To host your own fallback render server, we recommand to see <https://github.com/jihchi/mermaid.ink> for the details.
+- To host your own fallback render server, see <https://github.com/jihchi/mermaid.ink> for the details.
 
 ## Uninstallation
 
