@@ -6,7 +6,7 @@ Renders mermaid diagram images directly under the assistant message when the mes
 content contains mermaid syntax (a ` ```mermaid ` or ` ```mmd ` fenced code
 block).
 
-![dsh-mermaid-image-preview](https://raw.githubusercontent.com/baconbao/dsh-mermaid-image-preview/e0c28985c4bbd559eceaef9e3fa02474a42066da/docs/img/dsh-mermaid-image-preview.jpg)
+![dsh-mermaid-image-preview](https://raw.githubusercontent.com/baconbao/dsh-mermaid-image-preview/20e750658ed3da61d892df30cc127aaef5bd88b3/docs/img/dsh-mermaid-image-preview.jpg)
 
 ## How it works
 
