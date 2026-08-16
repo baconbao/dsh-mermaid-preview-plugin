@@ -46,8 +46,7 @@ $ npx @deepseek-ai/dsh plugin --profile web add github:baconbao/dsh-mermaid-imag
 $ git clone https://github.com/baconbao/dsh-mermaid-image-preview
 $ cd dsh-mermaid-image-preview
 $ pnpm install
-$ cd ..
-$ dsh plugin --profile web add @baconbao/dsh-mermaid-image-preview
+$ dsh plugin --profile web add .
 ```
 
 ## Configuration
